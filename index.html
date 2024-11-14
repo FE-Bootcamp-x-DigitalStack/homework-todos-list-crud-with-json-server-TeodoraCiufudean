@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Todos | JSON Server</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="scripts/server.js"></script>
-        <script src="scripts/ui.js" defer></script>
-        <script src="scripts/app.js" defer></script>
-    </head>
-    <body>
-        <h1>JSON Server API</h1>
-        <h2>Todos</h2>
-        <ul id="todos-list"></ul>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos | JSON Server</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts/server.js"></script>
+    <script src="scripts/ui.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <h1>JSON Server API</h1>
+    <h2>Todos</h2>
+    <ul id="todos-list"></ul>
+
+    <form id="form-new-item">
+      <h2>Add todo</h2>
+      <!--<fieldset>Add todo -->
+      <div>
+        <label
+          >Title:
+          <input type="text" id="title" required />
+        </label>
+      </div>
+      <div>
+        <label
+          >Done:
+          <input type="checkbox" id="done" />
+        </label>
+      </div>
+      <button type="submit">Add</button>
+      <!--</fieldset> -->
+    </form>
+  </body>
 </html>

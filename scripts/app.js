@@ -1,7 +1,10 @@
-(async function init() {
-    // Fetch todos from database
-    const todos = await server.getTodos();
+let todos = [];
 
-    // Render todos to UI
-    ui.renderTodos(todos);
+(async function init() {
+  // Fetch todos from database
+  todos = await server.getTodos();
+
+  // Render todos to UI
+  ui.renderTodos(todos);
+  console.log(todos);
 })();
